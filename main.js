@@ -7,11 +7,11 @@
 // return that number
 
 function HowManyCandles (candles) {
-  let tallestCandle = candles.max();
+  let tallestCandle = Math.max(...candles);
   let count = 0;
   for (let i = 0; i < candles.length; i++) {
     if (candles[i] === tallestCandle) {
-      count++
+      count++;
     }
   }
   return count;
